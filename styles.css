@@ -1,0 +1,181 @@
+/* Utilisation d'une police Google Fonts pour une typographie moderne */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Style global */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles pour le tableau */
+table {
+    width: auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    table-layout: auto;
+}
+
+th, td {
+    padding: 6px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styles pour les graphiques */
+.all-chart {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.chart:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Style pour le bouton de plein écran */
+.fullscreen-button {
+    background-color: #f8f8f8;
+    border: none;
+    color: #0070c9;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fullscreen-button i {
+    font-size: 18px;
+}
+
+.fullscreen-button:hover {
+    background-color: #0070c9;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles pour l'élément input de type "file" */
+.file-input {
+    display: none;
+}
+
+.file-label {
+    background-color: #f8f8f8;
+    color: #333333;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+    width: 180px;
+}
+
+.file-label:hover {
+    background-color: #333333;
+    color: white;
+    border-color: #333333;
+}
+
+/* Styles pour le bloc de tutoriel */
+.tuto {
+    background-color: #f8f8f8;
+    border: 1px solid #d0d0d0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tuto p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.tuto a {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #0070c9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tuto a:hover {
+    text-decoration: underline;
+}
+
+.tuto strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style pour le bloc d'instruction */
+.box-tuto {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour le bouton de suppression */
+.clear-button {
+    background-color: #ff3b30;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.clear-button:hover {
+    background-color: #d11a0c;
+}
+
+.title-chart {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
